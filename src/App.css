@@ -96,6 +96,10 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span {
 
 /* Styling of the second section */
 
+.second__sect-content {
+  margin-bottom: 2em;
+}
+
 .second__sect-content .second__each {
   width: 30%;
 }
@@ -103,6 +107,72 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span {
 
 
 /* Styling of the third section */
+
+.third__section {
+  background-image: url(./myAssets/sect__background.png);
+  background-repeat: no-repeat;
+  position: relative;
+  margin-bottom: 3em;
+  /* padding-top: 3em;
+  padding-bottom: 5em; */
+}
+
+/* .third__sect-right {
+  position: absolute;
+} */
+
+.third__sect-left {
+  display: none;
+}
+
+.third__heading {
+  margin-bottom: 2em;
+}
+
+.third__heading .third__head {
+  font-size: 2rem;
+  color: #3F3F3F;
+  font-weight: 700;
+  font-style: bold;
+  fill: solid;
+  line-height: 1.25rem;
+}
+
+.third__btm {
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.third__btm-right {
+  width: 60%;
+}
+
+.third__btm-left {
+  width: 20%;
+}
+
+.third__btm-left .third__btm-icon {
+  width: 2.5rem;
+}
+
+.third__btm-right .third__btm-head {
+  font-size: .8rem;
+  color: #3F3F3F;
+  font-weight: 700;
+  font-style: bold;
+  fill: solid;
+  line-height: 1.25rem;
+}
+
+.third__btm-subhead .third__btm-subtext {
+  font-size: .8rem;
+  color: #3F3F3F;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.25rem;
+}
+
 
 
 
