@@ -17,22 +17,35 @@ const PartnerPage = () => {
 							<img src={heroIcon} alt="Hero icon of the page" />
 						</div>
 						<div className="first__sect-left">
-							<div className='first__heading'>
+							<div className="first__heading">
 								<h1 className="first__sect-head">
 									Grow with us, Become a Partner
 								</h1>
 							</div>
-							<div className='first__subhead'>
-								<p className='first__sect-subtext'>
+							<div className="first__subhead">
+								<p className="first__sect-subtext">
 									Once you become a partner, we recognize you officially as a
 									VIP User of Srcybe with added features and benefits.
 									Let&apos;s work together. Join our community of partners to
-									grow your business and solve the problems of others. <span className='first__inline'><a href='/' className='first__inline-text'>Learn more</a></span>
+									grow your business and solve the problems of others.{" "}
+									<span className="first__inline">
+										<a href="/" className="first__inline-text">
+											Learn more
+										</a>
+									</span>
 								</p>
 							</div>
-							<div className='first__sect-input'>
-								<input type="email" placeholder="Email address" className='first__input-field' />
-								<input type="submit" value="Become a Partner" className='first__input-btn' />
+							<div className="first__sect-input">
+								<input
+									type="email"
+									placeholder="Email address"
+									className="first__input-field"
+								/>
+								<input
+									type="submit"
+									value="Become a Partner"
+									className="first__input-btn"
+								/>
 							</div>
 						</div>
 					</div>
@@ -40,11 +53,19 @@ const PartnerPage = () => {
 			</section>
 			<section className="second__sect">
 				<div className="sect__container">
-					<div>
-						<img src={google} alt="" />
-						<img src={microsoft} alt="" />
-						<img src={hotel} alt="" />
-						<img src={payooneer} alt="" />
+					<div className="second__sect-content">
+						<div className="second__each">
+							<img src={google} alt="google-icon" />
+						</div>
+						<div className="second__each">
+							<img src={microsoft} alt="microsoft-icon" />
+						</div>
+						<div className="second__each">
+							<img src={hotel} alt=" hotel-icon" />
+						</div>
+						<div className="second__each">
+							<img src={payooneer} alt="payooneer" />
+						</div>
 					</div>
 				</div>
 			</section>
