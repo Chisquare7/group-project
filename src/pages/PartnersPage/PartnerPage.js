@@ -172,12 +172,12 @@ const PartnerPage = () => {
 			</section>
 			<section className="fourth__section">
 				<div className="sect__container">
-					<div>
-						<div>
-							<h3>Help more companies discover the power of Scrybe</h3>
+					<div className='fourth__content'>
+						<div className='fourth__heading'>
+							<h3 className='fourth__head'>Help more companies discover the power of Scrybe</h3>
 						</div>
-						<div>
-							<button type="button">Join our Premium Partners Today</button>
+						<div className='fourth__action'>
+							<button type="button" className='fourth__btn'>Join our Premium Partners Today</button>
 						</div>
 					</div>
 				</div>
