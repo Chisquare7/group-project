@@ -2,36 +2,54 @@ import React from 'react'
 import heroIcon from "../../myAssets/hero__image.png";
 import layoutIcon from "../../myAssets/layout__three-hero.png";
 import footIcon from "../../myAssets/footer__init.png";
+import google from "../../myAssets/google.png";
+import microsoft from "../../myAssets/microsoft.png";
+import hotel from "../../myAssets/hotel.png";
+import payooneer from "../../myAssets/payooneer.png";
 
 const PartnerPage = () => {
   return (
 		<div>
-			<section>
-				<div>
+			<section className="first__sect">
+				<div className="sect__container">
 					<div>
-						<div>
-							<h1>Grow with us, Become a Partner</h1>
-							<div>
-								<p>
+						<div className="first__sect-right">
+							<img src={heroIcon} alt="Hero icon of the page" />
+						</div>
+						<div className="first__sect-left">
+							<div className='first__heading'>
+								<h1 className="first__sect-head">
+									Grow with us, Become a Partner
+								</h1>
+							</div>
+							<div className='first__subhead'>
+								<p className='first__sect-subtext'>
 									Once you become a partner, we recognize you officially as a
 									VIP User of Srcybe with added features and benefits.
 									Let&apos;s work together. Join our community of partners to
-									grow your business and solve the problems of others.
+									grow your business and solve the problems of others. <span className='first__inline'><a href='/' className='first__inline-text'>Learn more</a></span>
 								</p>
 							</div>
-							<div>
-								<input type="email" placeholder="Email address" />
-								<input type="submit" value="Become a Partner" />
+							<div className='first__sect-input'>
+								<input type="email" placeholder="Email address" className='first__input-field' />
+								<input type="submit" value="Become a Partner" className='first__input-btn' />
 							</div>
-						</div>
-						<div>
-							<img src={heroIcon} alt="Hero icon of the page" />
 						</div>
 					</div>
 				</div>
 			</section>
-			<section>
-				<div>
+			<section className="second__sect">
+				<div className="sect__container">
+					<div>
+						<img src={google} alt="" />
+						<img src={microsoft} alt="" />
+						<img src={hotel} alt="" />
+						<img src={payooneer} alt="" />
+					</div>
+				</div>
+			</section>
+			<section className="third__section">
+				<div className="sect__container">
 					<div>
 						<img src={layoutIcon} alt="Layout three section hero icon" />
 					</div>
@@ -95,8 +113,8 @@ const PartnerPage = () => {
 					</div>
 				</div>
 			</section>
-			<section>
-				<div>
+			<section className="fourth__section">
+				<div className="sect__container">
 					<div>
 						<div>
 							<h3>Help more companies discover the power of Scrybe</h3>
@@ -107,8 +125,8 @@ const PartnerPage = () => {
 					</div>
 				</div>
 			</section>
-			<section>
-				<div>
+			<section className="fifth__section">
+				<div className="sect__container">
 					<div>
 						<div>
 							<h2>Partner with Scrybe</h2>
