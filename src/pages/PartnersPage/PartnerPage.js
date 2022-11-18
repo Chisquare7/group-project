@@ -172,12 +172,16 @@ const PartnerPage = () => {
 			</section>
 			<section className="fourth__section">
 				<div className="sect__container">
-					<div className='fourth__content'>
-						<div className='fourth__heading'>
-							<h3 className='fourth__head'>Help more companies discover the power of Scrybe</h3>
+					<div className="fourth__content">
+						<div className="fourth__heading">
+							<h3 className="fourth__head">
+								Help more companies discover the power of Scrybe
+							</h3>
 						</div>
-						<div className='fourth__action'>
-							<button type="button" className='fourth__btn'>Join our Premium Partners Today</button>
+						<div className="fourth__action">
+							<button type="button" className="fourth__btn">
+								Join our Premium Partners Today
+							</button>
 						</div>
 					</div>
 				</div>
@@ -185,20 +189,22 @@ const PartnerPage = () => {
 			<section className="fifth__section">
 				<div className="sect__container">
 					<div>
-						<div>
-							<h2>Partner with Scrybe</h2>
-							<div>
-								<p>
+						<div className="form__top">
+							<div className="form__heading">
+								<h2 className="form__head">Partner with Scrybe</h2>
+							</div>
+							<div className="form__subhead">
+								<p className="form__subtext">
 									Drop details below and we get back to you as soon as possible
 								</p>
 							</div>
 						</div>
-						<div>
-							<form>
-								<div>
-									<div>
-										<div>
-											<label htmlFor="company__name">
+						<div className="form__section">
+							<form className="form__container">
+								<div className="input__overall">
+									<div className="input__content-flex">
+										<div className="input__flex">
+											<label htmlFor="company__name" className="label__name">
 												Company Name
 												<input
 													type="text"
@@ -207,8 +213,8 @@ const PartnerPage = () => {
 												/>
 											</label>
 										</div>
-										<div>
-											<label htmlFor="company__email">
+										<div className="input__flex">
+											<label htmlFor="company__email" className="label__name">
 												Company Email
 												<input
 													type="email"
@@ -218,9 +224,12 @@ const PartnerPage = () => {
 											</label>
 										</div>
 									</div>
-									<div>
-										<div>
-											<label htmlFor="employees__number">
+									<div className="input__content-flex">
+										<div className="input__flex">
+											<label
+												htmlFor="employees__number"
+												className="label__name"
+											>
 												Number of Employees
 												<input
 													type="number"
@@ -229,8 +238,8 @@ const PartnerPage = () => {
 												/>
 											</label>
 										</div>
-										<div>
-											<label htmlFor="customer__number">
+										<div className="input__flex">
+											<label htmlFor="customer__number" className="label__name">
 												Number of Customers
 												<input
 													type="number"
@@ -240,8 +249,8 @@ const PartnerPage = () => {
 											</label>
 										</div>
 									</div>
-									<div>
-										<label htmlFor="customer__address">
+									<div className="input__flex">
+										<label htmlFor="customer__address" className="label__name">
 											Company Address
 											<input
 												type="text"
@@ -250,15 +259,15 @@ const PartnerPage = () => {
 											/>
 										</label>
 									</div>
-									<div>
-										<div>
-											<label htmlFor="city">
+									<div className="input__content-flex">
+										<div className="input__flex">
+											<label htmlFor="city" className="label__name">
 												City
 												<input type="text" id="city" placeholder="City" />
 											</label>
 										</div>
-										<div>
-											<label htmlFor="state">
+										<div className="input__flex">
+											<label htmlFor="state" className="label__name">
 												State/Province
 												<input
 													type="text"
@@ -268,30 +277,40 @@ const PartnerPage = () => {
 											</label>
 										</div>
 									</div>
-									<div>
+									<div className="input__flex input__btn">
 										<input type="submit" id="submit__btn" value="SUBMIT" />
 									</div>
 								</div>
 							</form>
 						</div>
 					</div>
-					<div>
-						<div>
-							<div>
-								<h5>Getting Started is Easy</h5>
-								<div>
-									<p>
-										Wr are confident that you will get the best value from our
+					<div className="fifth__sect-btm">
+						<div className="fifth__btm-content">
+							<div className="fifth__btm-right">
+								<img src={footIcon} alt="Icon before the footer" />
+							</div>
+							<div className="fifth__btm-left">
+								<div className="fifth__left-heading">
+									<h5 className="fifth__left-head">Getting Started is Easy</h5>
+								</div>
+								<div className="fifth__left-subhead">
+									<p className="fifth__left-subtext">
+										We are confident that you will get the best value from our
 										products
 									</p>
 								</div>
-								<div>
-									<button type="button">Try for Free</button>
-									<button type="submit">Schedule a Demo</button>
+								<div className="fifth__sect-action">
+									<div className="fifth__btn-first">
+										<button type="button" className="btn__act-first">
+											Try for Free
+										</button>
+									</div>
+									<div className="fifth__btn-second">
+										<button type="submit" className="btn__act-second">
+											Schedule a Demo
+										</button>
+									</div>
 								</div>
-							</div>
-							<div>
-								<img src={footIcon} alt="Icon before the footer" />
 							</div>
 						</div>
 					</div>
