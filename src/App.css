@@ -13,7 +13,7 @@ img {
   max-width: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, p, input, textarea, label, span {
+h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   font-family: 'Kanit', sans-serif;
 }
 
@@ -109,17 +109,11 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span {
 /* Styling of the third section */
 
 .third__section {
-  background-image: url(./myAssets/sect__background.png);
-  background-repeat: no-repeat;
-  position: relative;
+  background: #E6F0FF;
+  border-top-right-radius: 10rem;
+  padding: 4em 0 1em;
   margin-bottom: 3em;
-  /* padding-top: 3em;
-  padding-bottom: 5em; */
 }
-
-/* .third__sect-right {
-  position: absolute;
-} */
 
 .third__sect-left {
   display: none;
@@ -135,7 +129,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span {
   font-weight: 700;
   font-style: bold;
   fill: solid;
-  line-height: 1.25rem;
+  line-height: 2rem;
 }
 
 .third__btm {
@@ -277,7 +271,6 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span {
   margin-top: 1em;
 }
 
-
 #submit__btn {
   width: 100%;
   font-weight: 500;
@@ -291,6 +284,94 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span {
   outline: none;
 }
 
+
+/* Styling of the fifth bottom section */
+
+.fifth__sect-btm {
+  background: #E6F0FF;
+  margin: 5em 0;
+  padding: 1em 0;
+  border-radius: 1rem;
+}
+
+.fifth__sect-btm .fifth__btm-content {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.fifth__btm-content .fifth__btm-left {
+  margin-top: 1.5em;
+}
+
+.fifth__btm-left .fifth__left-heading {
+  width: 95%;
+  text-align: center;
+  margin-bottom: 1.2em;
+}
+
+.fifth__left-heading .fifth__left-head {
+  font-size: 1.1rem;
+  color: #454545;
+  font-weight: 600;
+  font-style: light;
+  fill: solid;
+  line-height: 1.2rem;
+}
+
+.fifth__left-subhead {
+  width: 80%;
+  margin: 0 auto;
+
+}
+
+.fifth__left-subhead .fifth__left-subtext {
+  font-size: .7rem;
+  color: #3F3F3F;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.2rem;
+}
+
+.fifth__sect-action {
+  width: 70%;
+  margin: 1.2em auto 0;
+}
+
+.fifth__btn-first {
+  width: 65%;
+  margin: 0 auto;
+}
+
+.fifth__btn-first .btn__act-first {
+  width: 100%;
+  font-weight: 500;
+  border: none;
+  border-radius: .3rem;
+  padding: .8em .8em;
+  background: #006CFF;
+  color: #FFFFFF;
+  font-size: .7rem;
+  line-height: 1.5rem;
+  outline: none;
+}
+
+.fifth__btn-second {
+  margin-top: 1em;
+}
+
+.fifth__btn-second .btn__act-second {
+  width: 100%;
+  background: #E6F0FF;
+  border: 1px solid #006CFF;
+  font-weight: 500;
+  border-radius: .3rem;
+  padding: .8em .8em;
+  color: #006CFF;
+  font-size: .7rem;
+  line-height: 1.5rem;
+  outline: none;
+}
 
 
 
