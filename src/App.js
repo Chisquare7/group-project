@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PartnersPage from "../src/pages/PartnersPage/PartnerPage";
+import PartnersPage from "../src/pages/PartnersPage";
 
 function App() {
   return (
