@@ -1,13 +1,15 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import PartnersPage from "../src/pages/PartnersPage";
+import PressPage from "../src/pages/PressPage";
+import PressArticle from "../src/pages/PressArticle";
 
 function App() {
   return (
 		<div className="App">
 			<Router>
 				<Routes>
-					<Route path="/" element={<PartnersPage />} />
+					<Route path="/" element={<PressPage />} />
+					<Route path="/PressArticle" element={<PressArticle />} />
 				</Routes>
 			</Router>
 		</div>
