@@ -46,11 +46,59 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   line-height: 1.25rem;
 }
 
+.section__two {
+  position: relative;
+}
+.section__two .banner__flex {
+  position: absolute;
+  bottom: 15%;
+}
+.section__two .right__ban {
+  margin-top: 0.5em;
+}
+.section__two .ban__heading .ban__head {
+  font-size: 1rem;
+  color: #FEFEFE;
+  font-weight: 600;
+  font-style: bold;
+  fill: solid;
+  line-height: 2.5rem;
+}
+.section__two .ban__subhead .ban__subtext {
+  font-size: 0.7rem;
+  color: #FEFEFE;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1rem;
+}
+.section__two .banner__details {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  right: 3%;
+}
+.section__two .banner__details .banner__read {
+  font-size: 0.6rem;
+  color: #FEFEFE;
+  font-weight: 600;
+  font-style: bold;
+  fill: solid;
+  line-height: 1rem;
+}
+.section__two .banner__details .arrowpoint {
+  width: 0.7rem;
+  margin-left: 0.2em;
+}
+
+.section__three .three__desktop {
+  display: none;
+}
 .section__three .three__left {
   display: none;
 }
 .section__three .three__top {
-  margin: 1em auto;
+  margin: 1em 0;
   width: 80%;
 }
 .section__three .three__heading {
@@ -65,18 +113,23 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   width: 58%;
   margin: 0 auto;
 }
+.section__three .three__sep {
+  width: 50%;
+  margin-left: 0.8em;
+}
 .section__three .three__bottom .three__flex {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1em;
+  width: 70%;
 }
 .section__three .three__each {
   width: 45%;
+  border-bottom: 1px solid #ECECEC;
   text-align: center;
 }
 .section__three .three__each .three__sep {
-  border-bottom: 1px solid rgba(204, 204, 204, 0.8);
-  border-bottom-width: 1px thick;
+  border-bottom: 1px solid #ECECEC;
 }
 .section__three .three__each .three__head, .section__three .three__sep .three__head {
   font-size: 0.8rem;
@@ -87,6 +140,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   line-height: 1.2rem;
 }
 .section__three .three__each .three__text, .section__three .three__sep .three__text {
+  padding-bottom: 1em;
   font-size: 0.6rem;
   color: #313131;
   font-weight: 300;
@@ -110,11 +164,53 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   line-height: 1.2rem;
 }
 .section__four .four__cards {
-  width: 70%;
+  width: 60%;
   margin: 0 auto;
+  position: relative;
 }
 .section__four .four__cards .card__container {
   margin-bottom: 1.1em;
+  position: relative;
+}
+.section__four .card__content {
+  position: absolute;
+  padding: 2em 1em 1em;
+}
+.section__four .card__heading .card__head {
+  font-size: 1.3rem;
+  color: #FFFFFF;
+  font-weight: 700;
+  font-style: bold;
+  fill: solid;
+  line-height: 1.8rem;
+}
+.section__four .card__subhead, .section__four .card__logo {
+  margin-top: 1em;
+}
+.section__four .card__subhead .card__subtext {
+  font-size: 0.7rem;
+  color: #FFFFFF;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1.2rem;
+}
+.section__four .banner__details {
+  margin-top: 0.4em;
+  position: absolute;
+  right: 5%;
+}
+.section__four .banner__details .banner__read {
+  font-size: 0.6rem;
+  color: #FEFEFE;
+  font-weight: 300;
+  font-style: light;
+  fill: solid;
+  line-height: 1rem;
+}
+.section__four .banner__details .arrowpoint {
+  width: 0.7rem;
+  margin-left: 0.2em;
 }
 
 .section__five {
@@ -194,7 +290,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   margin-left: 0.2em;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 825px) {
   .section__one {
     margin-top: 3em;
   }
@@ -206,8 +302,44 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     font-weight: 500;
     font-style: medium;
   }
+  .section__two .banner__flex {
+    bottom: 10%;
+  }
+  .section__two .left__ban {
+    width: 60%;
+  }
+  .section__two .ban__heading .ban__head {
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+  }
+  .section__two .ban__subhead {
+    margin-top: 1em;
+  }
+  .section__two .ban__subhead .ban__subtext {
+    font-size: 1rem;
+    font-weight: 600;
+    font-style: bold;
+    line-height: 1.5rem;
+  }
+  .section__two .banner__details {
+    right: 1%;
+    bottom: 7%;
+  }
+  .section__two .banner__details .banner__read {
+    font-size: 0.8rem;
+  }
+  .section__two .banner__details .arrowpoint {
+    width: 1rem;
+  }
   .section__three {
     margin-top: 3em;
+  }
+  .section__three .three__right {
+    display: none;
+  }
+  .section__three .three__desktop {
+    display: block;
+    margin-top: 0.9em;
   }
   .section__three .three__center {
     display: flex;
@@ -219,7 +351,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     display: block;
     width: 30%;
   }
-  .section__three .three__right {
+  .section__three .three__right, .section__three .three__desktop {
     width: 60%;
   }
   .section__three .three__top {
@@ -235,10 +367,30 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
     line-height: 1.2rem;
   }
   .section__three .three__bottom {
-    margin: 0 auto;
+    width: 100%;
+    margin: 0;
   }
   .section__three .three__bottom .three__flex {
     display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .section__three .three__each {
+    width: 30%;
+    border-bottom: 1px solid #ECECEC;
+  }
+  .section__three .three__flexed {
+    display: flex;
+  }
+  .section__three .three__sep {
+    text-align: center;
+  }
+  .section__three .three__each .three__head, .section__three .three__sep .three__head {
+    font-size: 1rem;
+  }
+  .section__three .three__each .three__text, .section__three .three__sep .three__text {
+    font-size: 0.8rem;
+    padding-bottom: 1em;
   }
   .section__four {
     margin-top: 3em;
@@ -254,7 +406,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   }
   .section__four .four__cards .card__container {
     margin-bottom: 0;
-    width: 23%;
+    width: 15%;
   }
   .section__five .five__bottom {
     display: none;

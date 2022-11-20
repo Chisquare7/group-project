@@ -113,11 +113,71 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   font-size: 0.6rem;
   color: #313131;
   font-weight: 400;
-  font-style: light;
+  font-style: normal;
   fill: solid;
   line-height: 1rem;
 }
 .right__container .article__details .arrowleft {
   width: 0.7rem;
   margin-left: 0.2em;
+}
+
+@media (min-width: 768px) {
+  .first__section {
+    margin-top: 3em;
+  }
+  .first__section .first__heading {
+    width: 65%;
+  }
+  .first__section .first__heading .first__head {
+    font-size: 1.3rem;
+  }
+  .second__section .desktop__text {
+    display: inherit;
+    white-space: none;
+  }
+  .second__section .second__flex {
+    display: flex;
+    justify-content: flex-start;
+  }
+  .second__section .left__container {
+    width: 60%;
+    margin-top: 1em;
+  }
+  .second__section .right__container {
+    width: 30%;
+    border: 1px solid rgba(238, 238, 238, 0.9333333333);
+    padding: 2em 0 0 0.8em;
+  }
+  .second__section .left__container .left__hero {
+    text-align: unset;
+  }
+  .second__section .left__hero .hero__icon {
+    width: 100%;
+  }
+  .second__section hr {
+    visibility: none;
+  }
+  .second__section .desktop__view {
+    display: inline-block;
+    margin-bottom: 0.5em;
+    display: flex;
+    flex-direction: column;
+  }
+  .second__section .article__container {
+    margin-bottom: 0.5em;
+  }
+  .second__section .right__heading {
+    margin-bottom: 1em;
+  }
+  .second__section .right__heading .right__head {
+    font-size: 0.9rem;
+  }
+  .second__section .article__heading .article__head {
+    font-size: 0.8rem;
+  }
+  .second__section .article__details .read__more {
+    font-size: 0.6 0.5rem;
+    font-weight: 300;
+  }
 }/*# sourceMappingURL=pressArticle.module.css.map */
