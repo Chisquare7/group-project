@@ -150,6 +150,7 @@ h1, h2, h3, h4, h5, h6, p, input, textarea, label, span, button {
   }
   .first__section {
     padding-bottom: 5em;
+    width: 100%;
   }
   .first__section .logo__container {
     display: none;
