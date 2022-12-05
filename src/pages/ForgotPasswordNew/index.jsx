@@ -1,7 +1,7 @@
 import React from 'react'
-import styles from "../CheckMail/checkMail.module.scss";
-import checkMail from "../CheckMail/assets/check__mail.png";
-import heedLogo from "../CheckMail/assets/heed__logo.png";
+import styles from "../ForgotPasswordNew/forgotPassword.module.scss";
+import forgotPassword from "../ForgotPasswordNew/assets/forgot__pswd.png";
+import heedLogo from "../ForgotPasswordNew/assets/heed__logo.png";
 import { Link } from "react-router-dom";
 
 const index = () => {
@@ -21,31 +21,42 @@ const index = () => {
 						<div className={styles.bottom__content}>
 							<div className={styles.second__top}>
 								<div className={styles.second__heading}>
-									<h1 className={styles.second__head}>Check your Email</h1>
+									<h1 className={styles.second__head}>Forgot password?</h1>
 								</div>
 								<div className={styles.second__subtext}>
 									<p className={styles.second__subhead}>
-										A password reset link has been sent to your email along with
-										reset instructions.
+										Enter registered email to reset your password
 									</p>
 								</div>
 							</div>
 							<form className={styles.form__container}>
+								<div className={styles.input__flex}>
+									<label htmlFor="email" className={styles.label__name}>
+										Email
+										<input
+											type="email"
+											name="email"
+											id="email"
+											className={styles.email}
+											placeholder="Enter your company email"
+										/>
+									</label>
+								</div>
 								<div className={styles.form__action}>
 									<button
 										type="submit"
 										value="Reset password"
 										className={styles.form__button}
 									>
-										Open email
+										Reset password
 									</button>
 								</div>
 							</form>
 							<div className={styles.link__container}>
 								<p className={styles.link__text}>
-									Didn't receive an email?
+									Don't have an account?
 									<span className={styles.link__content}>
-										<Link className={styles.option__link}>click to resend</Link>
+										<Link className={styles.option__link}>Sign up</Link>
 									</span>
 								</p>
 							</div>
@@ -63,7 +74,7 @@ const index = () => {
 							</div>
 						</div>
 						<div className={styles.check__icon}>
-							<img src={checkMail} alt="checkmail icon" />
+							<img src={forgotPassword} alt="Forgot Password icon" />
 						</div>
 					</div>
 				</section>

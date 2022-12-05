@@ -57,7 +57,7 @@ const index = () => {
 							</div>
 						</div>
 						<div className={styles.check__icon}>
-							<img src={resetSuccess} alt="checkmail icon" />
+							<img src={resetSuccess} alt="Password Reset Successful icon" />
 						</div>
 					</div>
 				</section>
