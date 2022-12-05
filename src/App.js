@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 // import PressPage from "../src/pages/PressPage";
 // import PressArticle from "../src/pages/PressArticle";
-import CheckMail from "../src/pages/CheckMail";
+import PasswordResetSuccessful from "../src/pages/PasswordResetSuccessful";
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
 				<Routes>
 					{/* <Route path="/" element={<PressPage />} />
 					<Route path="/PressArticle" element={<PressArticle />} /> */}
-					<Route path="/checkmail" element={<CheckMail />} />
+					<Route path="/pw-reset-success" element={<PasswordResetSuccessful />} />
 				</Routes>
 			</Router>
 		</div>
