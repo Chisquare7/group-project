@@ -1,10 +1,40 @@
 import React from 'react'
+import { Link, useNavigate } from "react-router-dom";
+import { useForm } from "react-hook-form";
 import styles from "../ForgotPasswordNew/forgotPassword.module.scss";
 import forgotPassword from "../ForgotPasswordNew/assets/forgot__pswd.png";
 import heedLogo from "../ForgotPasswordNew/assets/heed__logo.png";
-import { Link } from "react-router-dom";
+import axios from "axios"; 
+
 
 const index = () => {
+
+	const navigate = useNavigate();
+	const {
+		register,
+		watch,
+		handleSubmit,
+		formState: { errors },
+	} = useForm();
+
+	const baseUrl = "https://api.heed.hng.tech";
+	const submitCallback = () => {
+		axios
+			.post(baseUrl + "/forgot-password", {
+				email: email,
+			})
+			.then((res) => {
+				/* TODO:
+          - When CheckEmail page is implemented, this page should redirect there instead of SetNewPassword
+        */
+				navigate(`/set-new-password?token=${res.data}`);
+			});
+	};
+
+	const email = watch("email");
+
+	const isValid = email;
+
   return (
 		<div>
 			<div className={styles.overall__container}>
@@ -30,23 +60,37 @@ const index = () => {
 								</div>
 							</div>
 							<form className={styles.form__container}>
-								<div className={styles.input__flex}>
+								<div
+									className={styles.input__flex}
+									onSubmit={handleSubmit(submitCallback)}
+								>
 									<label htmlFor="email" className={styles.label__name}>
 										Email
 										<input
 											type="email"
 											name="email"
 											id="email"
-											className={styles.email}
 											placeholder="Enter your company email"
+											value={email}
+											className={`${errors.email && styles.email} `}
+											{...register("email", {
+												required: "Email is required",
+												pattern: {
+													value: /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i,
+													message:
+														"Please enter a correct company email address",
+												},
+											})}
 										/>
 									</label>
+									<p className={styles.errorMsg}>{errors.email?.message}</p>
 								</div>
 								<div className={styles.form__action}>
 									<button
 										type="submit"
+										disabled={!isValid}
 										value="Reset password"
-										className={styles.form__button}
+										className={`${isValid && styles.form__button}`}
 									>
 										Reset password
 									</button>
