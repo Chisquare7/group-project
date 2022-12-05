@@ -60,14 +60,6 @@ const index = () => {
 									</button>
 								</div>
 							</form>
-							<div className={styles.link__container}>
-								<p className={styles.link__text}>
-									Don't have an account?
-									<span className={styles.link__content}>
-										<Link className={styles.option__link}>Sign up</Link>
-									</span>
-								</p>
-							</div>
 						</div>
 					</div>
 				</section>
