@@ -7,7 +7,7 @@ import heedLogo from "../ForgotPasswordNew/assets/heed__logo.png";
 import axios from "axios"; 
 
 
-const index = () => {
+const Index = () => {
 
 	const navigate = useNavigate();
 	const {
@@ -59,42 +59,43 @@ const index = () => {
 									</p>
 								</div>
 							</div>
-							<form className={styles.form__container}>
-								<div
-									className={styles.input__flex}
-									onSubmit={handleSubmit(submitCallback)}
+							<form
+								className={styles.form__container}
+								onSubmit={handleSubmit(submitCallback)}
+							>
+								<label htmlFor="email" className={styles.label__name}>
+									Email
+									<input
+										type="email"
+										name="email"
+										id="email"
+										placeholder="Enter your company email"
+										value={email}
+										className={`${errors.email && styles.emailInput} `}
+										{...register("email", {
+											required: "Email is required",
+											pattern: {
+												value: /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i,
+												message: "Please enter a correct company email address",
+											},
+										})}
+									/>
+								</label>
+								<p className={styles.errorMsg}>{errors.email?.message}</p>
+								<input
+									type="submit"
+									disabled={!isValid}
+									value="Reset password"
+									className={`${isValid && styles.form__button}`}
+								/>
+								{/* <button
+									type="submit"
+									disabled={!isValid}
+									value="Reset password"
+									className={`${isValid && styles.form__button}`}
 								>
-									<label htmlFor="email" className={styles.label__name}>
-										Email
-										<input
-											type="email"
-											name="email"
-											id="email"
-											placeholder="Enter your company email"
-											value={email}
-											className={`${errors.email && styles.email} `}
-											{...register("email", {
-												required: "Email is required",
-												pattern: {
-													value: /^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i,
-													message:
-														"Please enter a correct company email address",
-												},
-											})}
-										/>
-									</label>
-									<p className={styles.errorMsg}>{errors.email?.message}</p>
-								</div>
-								<div className={styles.form__action}>
-									<button
-										type="submit"
-										disabled={!isValid}
-										value="Reset password"
-										className={`${isValid && styles.form__button}`}
-									>
-										Reset password
-									</button>
-								</div>
+									Reset password
+								</button> */}
 							</form>
 							<div className={styles.link__container}>
 								<p className={styles.link__text}>
@@ -127,4 +128,4 @@ const index = () => {
 	);
 }
 
-export default index
+export default Index
